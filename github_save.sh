@@ -1,5 +1,5 @@
 #!/bin/bash
-# Simple bash script I made to save your current HTML to /home directory
+# Simple bash script I made to save your current index.html file to /home directory & back it up to a new GitHub Repository
 # Make sure to (chmod +X) the bash script before executing it
 # To execute (./github_save.sh) OR (bash github_save.sh)
 
