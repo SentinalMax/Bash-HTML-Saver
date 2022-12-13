@@ -35,7 +35,7 @@ if [ -f "$FILE" ]; then
         echo "# This is a copy of your 'index.html' file that exists in this DIR '/var/www/html' on your azure machine. You can run 'git add index.html && git commit -a && git push -u origin main' after runnin$
         git init /home/HTML
         git add README.md && git add index.html
-        git commit -m "initial commit"
+        git commit -am "initial commit"
         git branch -M main
         git push -u origin main
 fi
