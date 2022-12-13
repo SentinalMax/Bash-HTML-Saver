@@ -13,8 +13,8 @@ if [ -f "$FILE" ]; then
         cp $FILE /home/HTML
 
         # Here you'll enter the email tied to your GitHub account, as well as your Github Username
-        git config --global user.email "sharkdrummer1111@gmail.com"
-        git config --global user.name "SentinalMax"
+        git config --global user.email "EMAIL@EMAIL.com"
+        git config --global user.name "GHUB_USERNAME"
 
         # Do not touch this code unless you know what you're doing...
         echo "installing GitHub CLI & dependencies"
