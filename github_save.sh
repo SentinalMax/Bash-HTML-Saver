@@ -4,7 +4,6 @@
 # To execute (./save_html) OR (bash save_html)
 
 FILE=/var/www/html/index.html
-REPO_NAME="INDEX-HTML"
 
 if [ -f "$FILE" ]; then
         echo "creating new local folder (HTML) to /home"
