@@ -1,7 +1,7 @@
 #!/bin/bash
 # Simple bash script I made to save your current HTML to /home directory
 # Make sure to (chmod +X) the bash script before executing it
-# To execute (./save_html) OR (bash save_html)
+# To execute (./github_save.sh) OR (bash github_save.sh)
 
 FILE=/var/www/html/index.html
 EMAIL="GITHUB_EMAIL" # An email linked to your GitHub Account
