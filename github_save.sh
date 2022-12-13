@@ -4,8 +4,8 @@
 # To execute (./save_html) OR (bash save_html)
 
 FILE=/var/www/html/index.html
-EMAIL="sharkdrummer1111@gmail.com"
-USERNAME="SentinalMax"
+EMAIL="REPLACE_ME@something.com"
+USERNAME="REPLACE_ME"
 
 if [ -f "$FILE" ]; then
         echo "creating new local folder (HTML) to /home"
