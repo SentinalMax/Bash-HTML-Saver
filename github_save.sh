@@ -29,7 +29,7 @@ if [ -f "$FILE" ]; then
         && sudo apt install gh -y
 
         # Init Repo
-        echo "# This is a copy of your 'index.html' file that exists in this DIR '/var/www/html' on your azure machine. You can run 'git add index.html && git commit -a && git push -u origin main' after executing the program on your azure machine." > README.md
+        echo "# This is a copy of your 'index.html' file that exists in this DIR '/var/www/html' on your azure machine. You can run 'git add index.html && git commit -a && git push -u origin main' after executing the program on your azure machine to keep a backup stored on your Github Account." > README.md
         git init
         git add README.md && git add index.html
         git commit -am "initial commit"
