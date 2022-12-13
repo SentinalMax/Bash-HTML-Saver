@@ -8,7 +8,7 @@ EMAIL="GITHUB_EMAIL" # An email linked to your GitHub Account
 USERNAME="GITHUB_USER" # The username linked to your GitHub Account
 
 if [ -f "$FILE" ]; then
-        echo "creating new local folder (HTML) to /home"
+        echo "Creating new local folder (HTML) to /home"
         cd /home && mkdir HTML
         echo "$FILE exists -> copying to /home/HTML"
         cp $FILE /home/HTML
@@ -19,7 +19,7 @@ if [ -f "$FILE" ]; then
         git config --global user.name $USERNAME
 
         # Do not touch this code unless you know what you're doing...
-        echo "installing GitHub CLI & dependencies"
+        echo "Installing GitHub CLI & dependencies"
         apt install apt-transport-https
         type -p curl >/dev/null || sudo apt install curl -y
         curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg \
