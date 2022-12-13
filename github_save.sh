@@ -4,8 +4,8 @@
 # To execute (./save_html) OR (bash save_html)
 
 FILE=/var/www/html/index.html
-EMAIL="REPLACE_ME@something.com"
-USERNAME="REPLACE_ME"
+EMAIL="GITHUB_EMAIL" # An email linked to your GitHub Account
+USERNAME="GITHUB_USER" # The username linked to your GitHub Account
 
 if [ -f "$FILE" ]; then
         echo "creating new local folder (HTML) to /home"
