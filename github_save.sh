@@ -1,5 +1,5 @@
 #!/bin/bash
-# Bash script I made to save your current HTML to /home directory
+# Bash script I made to save your current HTML to /home directory & create a new backup repo in GitHub
 # Make sure to (chmod +X) the bash script before executing it
 # To execute (./save_html) OR (bash save_html)
 
