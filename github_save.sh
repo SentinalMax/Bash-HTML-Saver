@@ -1,9 +1,10 @@
 #!/bin/bash
-# Simple bash script I made to save your current index.html file to /home directory & back it up to a new GitHub Repository
+# Bash script I made to save your current index.html file to /home directory & back it up to a new GitHub Repository
 # Make sure to (chmod +X) the bash script before executing it
 # To execute (./github_save.sh) OR (bash github_save.sh)
 
 FILE=/var/www/html/index.html
+REPO_PATH=/home/HTML
 EMAIL="GITHUB_EMAIL" # An email linked to your GitHub Account
 USERNAME="GITHUB_USER" # The username linked to your GitHub Account
 
@@ -27,7 +28,7 @@ if [ -f "$FILE" ]; then
         && sudo apt update \
         && sudo apt install gh -y
 
-        # Init Repo
+        # Initialize Repository
         echo "This is a copy of your 'index.html' file which exists in this DIR '/var/www/html' on your azure machine. You can run 'git add index.html && git commit -a && git push -u origin main' after executing the program on your azure machine to keep a backup stored on your Github Account." > README.md
         git init
         git add README.md && git add index.html
@@ -36,7 +37,7 @@ if [ -f "$FILE" ]; then
 
         # You will be prompted to authenticate your login with Github, follow the prompts as you see fit.
         gh auth login
-        gh repo create HTML --public --source=/home/HTML
+        gh repo create HTML --public --source=$REPO_PATH
         git remote add origin https://github.com/$USERNAME/Index.git
         git push -u origin main
 fi
